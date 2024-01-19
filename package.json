@@ -1,7 +1,8 @@
 {
-  "name": "screen_recorder",
+  "name": "screen-recorder-next-js",
   "version": "0.1.0",
-  "private": true,
+  "auther": "muddassiralirana",
+  "entrypoint":"index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -22,6 +23,15 @@
     "eslint-config-next": "14.0.4"
   },
   "publishConfig": {
-    "registry": "https://github.com/muddassiralirana/video-screen-recorder-Next.js"
-  }
+    "registry": "https://registry.npmjs.org/" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muddassiralirana/video-screen-recorder-Next.js.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muddassiralirana/video-screen-recorder-Next.js/issues"
+  },
+  "homepage": "https://github.com/muddassiralirana/video-screen-recorder-Next.js#readme"
 }
