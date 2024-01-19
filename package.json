@@ -1,29 +1,32 @@
 {
   "name": "screen-recorder-next-js",
-  "version": "0.1.0",
+  "version": "0.6.0",
   "auther": "muddassiralirana",
-  "entrypoint":"index.js",
+  "main": "./dist/ScreenRecorder.js", 
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "babel src -d dist",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-react": "^7.23.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "babel-loader": "^9.1.3",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/" 
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -33,5 +36,11 @@
   "bugs": {
     "url": "https://github.com/muddassiralirana/video-screen-recorder-Next.js/issues"
   },
-  "homepage": "https://github.com/muddassiralirana/video-screen-recorder-Next.js#readme"
+  "homepage": "https://github.com/muddassiralirana/video-screen-recorder-Next.js#readme",
+  "exports": {
+    ".": {
+      "import": "./src/components/ScreenRecorder.js",
+      "require": "./src/components/ScreenRecorder.js"
+    }
+  }
 }
